@@ -1,4 +1,4 @@
-package dev.rafex.ether.database.core;
+package dev.rafex.ether.database.core.transaction;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -6,5 +6,5 @@ import java.sql.SQLException;
 @FunctionalInterface
 public interface TransactionCallback<T> {
 
-	T execute(Connection connection) throws SQLException;
+    T execute(Connection connection) throws SQLException;
 }

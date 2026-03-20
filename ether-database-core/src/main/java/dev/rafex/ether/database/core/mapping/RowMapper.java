@@ -1,4 +1,4 @@
-package dev.rafex.ether.database.core;
+package dev.rafex.ether.database.core.mapping;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -6,5 +6,5 @@ import java.sql.SQLException;
 @FunctionalInterface
 public interface RowMapper<T> {
 
-	T map(ResultSet resultSet) throws SQLException;
+    T map(ResultSet resultSet) throws SQLException;
 }
